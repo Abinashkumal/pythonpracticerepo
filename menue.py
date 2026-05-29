@@ -1,4 +1,5 @@
 
+# define a functin for perform a task
 def sum():
     firstNumber = int(input("Please enter a firstNumber: "))
     secondNumber = int(input("please Enter a secondNumber: "))
@@ -36,7 +37,7 @@ def div():
 
 
 
-
+# Using a loop to display menue and perform task 
 
 while True:
     print("\n1.Addition")
@@ -47,6 +48,7 @@ while True:
 
     choice = input("Please choose a valid number: ")
 
+# using if elif  concep f
     if choice == "1":
         sum()
     elif choice == "2":
@@ -61,10 +63,10 @@ while True:
 
  
 
+#  Ask a user to perform a task again or not
 
-
-    check =input(("Do you want to perform task again(y/n):")).lower()
-    if check =='y':
+    again =input(("Do you want to perform task again(y/n):")).lower()  # using a lower function also if user enter a capital letter to give input in lowercase
+    if again =='y':
         print("\n\n\n--welcome----")
     else:
         print("Thankyou!")
